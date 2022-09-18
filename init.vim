@@ -20,8 +20,10 @@ let g:go_info_mode='gopls'
 
 " added lsp-config 
 " here is source:  https://www.getman.io/posts/programming-go-in-neovim/ 
-
 lua require("lsp_config")
 
 autocmd BufWritePre *.go lua vim.lsp.buf.formatting()
 autocmd BufWritePre *.go lua goimports(1000)
+
+" Open the existing NERDTree on each new tab.
+autocmd BufWinEnter * if getcmdwintype() == '' | silent NERDTreeMirror | endif

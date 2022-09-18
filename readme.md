@@ -17,7 +17,7 @@ After that type in terminal to enter neovim
 ```
 nvim
 ```
-And then this command in nvim to install all plug stuff
+And then this command in nvim to install all plug stuff (plugin manager for neovim)
 ```
 :PlugInstall
 ```
