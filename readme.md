@@ -10,8 +10,10 @@ You need to put this(entire folder) in default neovim config folder that is `~/.
 cd ~/Downloads/
 curl <figure out how you can download repo project with all files and move them to config/nvim/> 
 ```
+## 2. Requirements
+Install golang
 
-## 2. :PlugInstall in nvim
+## 3. Requirements in nvim
 
 After that type in terminal to enter neovim
 ```
@@ -21,3 +23,8 @@ And then this command in nvim to install all plug stuff (plugin manager for neov
 ```
 :PlugInstall
 ```
+Close open nvim
+```
+:GoInstallBin
+```
+
